@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fakulteti i Shkencave të Natyrës | FSHN</title>
+    {% load static %}
+    <link rel='stylesheet' href='{% static 'plugins/goodlayers-core/plugins/combine/style.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' href='{% static 'plugins/goodlayers-core/include/css/page-builder.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' href='{% static 'plugins/revslider/public/assets/css/settings.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' href='{% static 'css/style-core.css' %}' type='text/css' media='all' />
+    <link rel='stylesheet' href='{% static 'css/fshn-style-custom.css' %}' type='text/css' media='all' />
+    <link rel="icon" href="{% static 'images/fshn_logo_png.png' %}">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CABeeZee%3Aregular%2Citalic&amp;subset=latin%2Clatin-ext%2Cdevanagari&amp;ver=5.0.3' type='text/css' media='all' />
+</head>
+
+<body class="home page-template-default page page-id-2039 gdlr-core-body woocommerce-no-js tribe-no-js fshn-body fshn-body-front fshn-full  fshn-with-sticky-navigation  fshn-blockquote-style-1 gdlr-core-link-to-lightbox">
+    {% include 'scientific_research/includes/scientific_research_mobile_header.html' %}
+    <div class="fshn-body-outer-wrapper ">
+        <div class="fshn-body-wrapper clearfix  fshn-with-frame">
+            {% include 'scientific_research/includes/scientific_research_header.html' %}
+            <div class="fshn-blog-title-wrap  fshn-style-small" style="background-image: url({% static 'images/publikime_konferenca.jpg' %})">
+                <div class="fshn-header-transparent-substitute"></div>
+                <div class="fshn-blog-title-top-overlay"></div>
+                <div class="fshn-blog-title-overlay"></div>
+                <div class="fshn-blog-title-bottom-overlay"></div>
+                <div class="fshn-blog-title-container fshn-container" style="padding-top: 50px; padding-bottom: 50px">
+                    <div class="fshn-blog-title-content fshn-item-pdlr">
+                        <div class="fshn-page-title-content fshn-item-pdlr">
+                            <div class="fshn-page-caption" style="color:#3db166;">Fakulteti i Shkencave të Natyrës</div>
+                            <h1 class="fshn-page-title" style="color: white; font-size: 52px;" data-orig-font="52px">Publikime & Konferenca</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gdlr-core-pbf-wrapper " style="padding: 80px 0px 45px 0px;">
+                <div class="gdlr-core-pbf-background-wrap"></div>
+                <div class="gdlr-core-pbf-wrapper-content gdlr-core-js ">
+                    <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+                        <div class="gdlr-core-pbf-column gdlr-core-column-60">
+                            <div class="gdlr-core-pbf-column-content-margin gdlr-core-js ">
+                                <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js ">
+                                    <div class="gdlr-core-pbf-element">
+                                        <div class="gdlr-core-accordion-item gdlr-core-item-pdlr gdlr-core-item-pdb  gdlr-core-accordion-style-background-title-icon gdlr-core-left-align gdlr-core-icon-pos-right">
+                                            <div class="gdlr-core-accordion-item-tab clearfix  gdlr-core-active">
+                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon "></div>
+                                                <div class="gdlr-core-accordion-item-content-wrapper">
+                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js  gdlr-core-skin-e-background gdlr-core-skin-e-content">Departamenti i Biologjisë</h4>
+                                                    <div class="gdlr-core-accordion-item-content">
+                                                        <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                            <div class="gdlr-core-text-box-item-content" style="text-transform: none ;">
+                                                                <div style="overflow-x: auto;">
+                                                                    <table style="min-width: 835px;">
+                                                                        <tbody>
+                                                                        <tr style="font-weight: bolder">
+                                                                            <th style="min-width: 50px;">NR.</th>
+                                                                            <th>Autoret e punimit</th>
+                                                                            <th>Titulli i punimit</th>
+                                                                            <th>Konferenca</th>
+                                                                            <th>Data</th>
+                                                                            <th>Vendi</th>
+                                                                            <th style="min-width: 150px">Financimi nga FSHN</th>
+                                                                            <th style="min-width: 100px">Abstrakti</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td>M. Lika (Çekani), Dh. Torba, M. Xhetani</td>
+                                                                            <td>Microbiological quality assesment of food in children </td>
+                                                                            <td>World Conference on Sustainable Life Sciences (WOCOLS 2019)</td>
+                                                                            <td>30 Qershor- 07 Korrik 2019</td>
+                                                                            <td>Budapest, Hungari</td>
+                                                                            <td>14,960 Lekë </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>2</td>
+                                                                            <td>Ledia Vasjari, Stephanie Bresan, Ignacio Rubio </td>
+                                                                            <td>Induced recruitment of RasGAP to control Cyclin D expression </td>
+                                                                            <td>3rd International Conference “ Challenges in Biotechnological and Environmental Approaches”</td>
+                                                                            <td>23-24 Prill 2019 </td>
+                                                                            <td>Tiranë </td>
+                                                                            <td>14,610 Leke </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>3</td>
+                                                                            <td>Merita Rumano, Anila Mitre dhe Elvisa Rumano </td>
+                                                                            <td>Vitamin d status and parathyroid hormone in Albanians </td>
+                                                                            <td>International Conference on Research in Education and Science (ICRES 2019)</td>
+                                                                            <td>28 Prill - 1 Maj 2019</td>
+                                                                            <td>Cesme, Turqi.  </td>
+                                                                            <td>53,982 Leke</td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>4</td>
+                                                                            <td>Merita Xhetani, Enera Malaj, Irena Seferi, Mirela Lika (Çekani) </td>
+                                                                            <td>Molecular determination of paternal RHD zygosity to predict risk of hemolytic disease of fetus and newborn </td>
+                                                                            <td>European Conference of Human Genetics 2019 </td>
+                                                                            <td>15-18 Qershor 2019</td>
+                                                                            <td>Gothenburg, Suedi  </td>
+                                                                            <td>53,940 Leke </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>5</td>
+                                                                            <td>Sajmir Beqiraj, Enrique Ballesteros, Ina Nasto, Entela Nezha, Lorela Pashaj </td>
+                                                                            <td>Assessment of the state of macrozoobenthos and benthic habitats in the Karaburun Peninsula (Albania). </td>
+                                                                            <td>AdriBioPro 2019 International Conference: Adriatic Biodiversity Protection </td>
+                                                                            <td>7 - 10 Prill 2019 </td>
+                                                                            <td>Kotor, Mali i Zi </td>
+                                                                            <td>17,860 Leke </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>6</td>
+                                                                            <td>Marjol Meço, Alfred Mullaj, Ermelinda Gjeta, Oresta Saliaj &amp; Tsiripidis Ioannis </td>
+                                                                            <td>New Records of Three Plant Species in Albania  </td>
+                                                                            <td>XVI OPTIMA Meeting </td>
+                                                                            <td>2-5 Tetor 2019 </td>
+                                                                            <td>Agricultural University of Athens, Greece  </td>
+                                                                            <td>59,000 Leke </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-accordion-item-tab clearfix ">
+                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon "></div>
+                                                <div class="gdlr-core-accordion-item-content-wrapper">
+                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js  gdlr-core-skin-e-background gdlr-core-skin-e-content">Departamenti i Bioteknologjisë</h4>
+                                                    <div class="gdlr-core-accordion-item-content">
+                                                        <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                            <div class="gdlr-core-text-box-item-content" style="text-transform: none ;">
+                                                                <div style="overflow-x: auto;">
+                                                                    <table style="min-width: 835px;">
+                                                                        <tbody>
+                                                                        <tr style="font-weight: bolder">
+                                                                            <th style="min-width: 50px;">NR.</th>
+                                                                            <th>Autoret e punimit</th>
+                                                                            <th>Titulli i punimit</th>
+                                                                            <th>Konferenca</th>
+                                                                            <th>Data</th>
+                                                                            <th style="min-width: 100px">Vendi</th>
+                                                                            <th style="min-width: 150px">Financimi</th>
+                                                                            <th style="min-width: 100px">Abstrakti</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td>Gledjan Caka, Rajan Singh, Karlheinz Friedrigh </td>
+                                                                            <td>"Role of fibroblasts in epithelial-mesenchymal transition in bladder cancer cells" </td>
+                                                                            <td>Third International Conference: Challenges in Biotechnological and Environmental Approaches</td>
+                                                                            <td>23 - 24 Prill 2019 </td>
+                                                                            <td>Tiranë, Albania </td>
+                                                                            <td>14,610 Lekë </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-accordion-item-tab clearfix ">
+                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon "></div>
+                                                <div class="gdlr-core-accordion-item-content-wrapper">
+                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js  gdlr-core-skin-e-background gdlr-core-skin-e-content">Departamenti i Fizikës</h4>
+                                                    <div class="gdlr-core-accordion-item-content">
+                                                        <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                            <div class="gdlr-core-text-box-item-content" style="text-transform: none ;">
+                                                                <div style="overflow-x: auto;">
+                                                                    <table style="min-width: 835px;">
+                                                                        <tbody>
+                                                                        <tr style="font-weight: bolder">
+                                                                            <th style="min-width: 50px;">NR.</th>
+                                                                            <th>Autoret e punimit</th>
+                                                                            <th>Titulli i punimit</th>
+                                                                            <th>Konferenca</th>
+                                                                            <th style="min-width: 100px">Data</th>
+                                                                            <th style="min-width: 130px">Vendi</th>
+                                                                            <th style="min-width: 150px">Financimi</th>
+                                                                            <th style="min-width: 100px">Abstrakti</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td>Malvina Marku  </td>
+                                                                            <td>Using the Genetic Algorithm to Estimate Kinetic Parameters of Klotho Network</td>
+                                                                            <td>Statistical Physics of Complex Systems </td>
+                                                                            <td>07-11 Maj 2019 </td>
+                                                                            <td>Stokholm,Suedi </td>
+                                                                            <td>130,281 lekë </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>2</td>
+                                                                            <td>Dode Prenga </td>
+                                                                            <td>A two stage opinion formation model based on the extended XY-magnet interaction and socio-dynamic update mechanism</td>
+                                                                            <td>Referuar ne "8th International Conference Mathematical Modeling in Physics". Botuar tek "Journal of Phyiscs: Conference Series" </td>
+                                                                            <td>26-29 Gusht 2019 </td>
+                                                                            <td>Bratislave (Sllovaki) </td>
+                                                                            <td>135,731 Leke </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>3</td>
+                                                                            <td>Klaudio Peqini dhe Bejo Duka </td>
+                                                                            <td>Small-scale velocity field at the Core-Mantle Boundary constructed from the gufml global model </td>
+                                                                            <td>35th Turkish Physical Society International Physics Congress </td>
+                                                                            <td>04-08 Shtator 2019 </td>
+                                                                            <td>Bodrum, Turqi </td>
+                                                                            <td>	95,946 Leke </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>4</td>
+                                                                            <td>Olta Çakaj, Edlira Duka, Gert Schmidt, Nikolla Civici, Elsa Qoku, Teuta Dilo </td>
+                                                                            <td>Preliminary study of Anastasius emperor’s coins (VI AD) excavated in the Macellum build in his honor, in Durrës, Albania.</td>
+                                                                            <td>Konferenca ndërkombëtare “Archaeometallurgy in Europe 5” </td>
+                                                                            <td>19-21 qershor 2019 </td>
+                                                                            <td>Miskolc, Hungari </td>
+                                                                            <td>73,228 Leke </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-accordion-item-tab clearfix ">
+                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon "></div>
+                                                <div class="gdlr-core-accordion-item-content-wrapper">
+                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js  gdlr-core-skin-e-background gdlr-core-skin-e-content">Departamenti i Informatikës</h4>
+                                                    <div class="gdlr-core-accordion-item-content">
+                                                        <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                            <div class="gdlr-core-text-box-item-content" style="text-transform: none ;">
+                                                                <div style="overflow-x: auto;">
+                                                                    <table style="min-width: 835px;">
+                                                                        <tbody>
+                                                                        <tr style="font-weight: bolder">
+                                                                            <th style="min-width: 50px;">NR.</th>
+                                                                            <th>Autoret e punimit</th>
+                                                                            <th>Titulli i punimit</th>
+                                                                            <th>Konferenca</th>
+                                                                            <th style="min-width: 100px">Data</th>
+                                                                            <th style="min-width: 130px">Vendi</th>
+                                                                            <th style="min-width: 150px">Financimi</th>
+                                                                            <th style="min-width: 100px">Abstrakti</th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td>Jezuina Koroveshi, Ana Ktona, Denada Collaku, Endri Bimbari </td>
+                                                                            <td>A reinforcement learning approach for target tracking using neural network as function approximation</td>
+                                                                            <td>15th Annual International Conference on Information Technology &amp; Computer Science  </td>
+                                                                            <td>20-23 Maj 2019 </td>
+                                                                            <td>Athine, Greqi </td>
+                                                                            <td>53,420 Lekë  </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>2</td>
+                                                                            <td>Petrika Manika, Ana Ktona </td>
+                                                                            <td>Introducing a model for the representation of medical data using ontologies and web  technologies </td>
+                                                                            <td>15th Annual International Conference on Information Technology &amp; Computer Science  </td>
+                                                                            <td>20-23 Maj 2019 </td>
+                                                                            <td>Athine, Greqi </td>
+                                                                            <td>53,420 Lekë  </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>3</td>
+                                                                            <td>Ana Ktona, Anila Mitre, Denada Çollaku, Jezuina Koroveshi </td>
+                                                                            <td>Intelligent Systems to support Decision Making </td>
+                                                                            <td>35th Turkish Physical Society International Physics Congress </td>
+                                                                            <td>04-08 Shtator 2019 </td>
+                                                                            <td>Bodrum, Turqi </td>
+                                                                            <td>	95,946 Leke </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>4</td>
+                                                                            <td>Intelligent Systems to support Decision Making </td>
+                                                                            <td>Improving interoperability in Healthcare using Hl7 FHIR</td>
+                                                                            <td>IISES International Academic Conference </td>
+                                                                            <td>17-20 Qershor 2019 </td>
+                                                                            <td>Pragë, Çeki  </td>
+                                                                            <td>118,410 Lekë </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>5</td>
+                                                                            <td>Elda Xhumari, Julian Fejzaj </td>
+                                                                            <td>Usage of artificial neural networks in data classification </td>
+                                                                            <td>IISES International Academic Conference </td>
+                                                                            <td>17-20 Qershor 2019 </td>
+                                                                            <td>Pragë, Çeki  </td>
+                                                                            <td>75,910 Lekë</td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>6</td>
+                                                                            <td>Silvana Greca, Anxhela Kosta </td>
+                                                                            <td>The Impact of the Google Cloud to Increase the Performance for a Use Case in E-Commerce Platform </td>
+                                                                            <td>International Journal of Computer Applications </td>
+                                                                            <td>18 Qershor 2020 </td>
+                                                                            <td>Shtetet e Bashkuara të Amerikës </td>
+                                                                            <td>19,556 Leke </td>
+                                                                            <td>
+                                                                                <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 16px ;font-weight: 600 ;letter-spacing: 0px ;">
+                                                                                    <a href="#">Kliko ketu...</a>
+                                                                                </h3>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-accordion-item-tab clearfix ">
+                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon "></div>
+                                                <div class="gdlr-core-accordion-item-content-wrapper">
+                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js  gdlr-core-skin-e-background gdlr-core-skin-e-content">Departamenti i Kimisë</h4>
+                                                    <div class="gdlr-core-accordion-item-content">
+                                                        <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                            <div class="gdlr-core-text-box-item-content" style="text-transform: none ;">
+                                                                <div style="overflow-x: auto;">
+                                                                    <table style="min-width: 835px;">
+                                                                        <tbody><tr>
+                                                                            <td id="sites-canvas-wrapper">
+                                                                                <div id="sites-canvas" role="main">
+                                                                                    <div id="goog-ws-editor-toolbar-container"> </div>
+                                                                                    <div id="sites-canvas-main" class="sites-canvas-main">
+                                                                                        <div id="jot-content" class="list-page sites-clear">
+                                                                                            <table id="goog-ws-list-table" class="sites-table goog-ws-list-table">
+                                                                                                <tbody xmlns="http://www.w3.org/1999/xhtml">
+                                                                                                <tr style="font-weight: bolder">
+                                                                                                    <th style="min-width: 50px; max-width: 50px">NR.</th>
+                                                                                                    <th>Autoret e punimit</th>
+                                                                                                    <th>Titulli i punimit</th>
+                                                                                                    <th>Konferenca</th>
+                                                                                                    <th style="min-width: 100px">Data</th>
+                                                                                                    <th style="min-width: 130px">Vendi</th>
+                                                                                                    <th style="min-width: 150px">Financimi</th>
+                                                                                                    <th style="min-width: 100px">Abstrakti</th>
+                                                                                                </tr>
+                                                                                                <tr id="wuid:gx:3114c699b11f2214" class="goog-ws-list-tableRow"><td dir="">2&nbsp;</td><td dir="ltr">K. Xhaxhiu, A. Korpa, A. Andoni, K. Bente&nbsp;</td><td dir="ltr">Thermoelectric Properties Tuning in Mixed Valence Inorganic Solid Compound - In5S5Br by Oriented Mutual Chalcogenide Substitutions.  &nbsp;</td><td dir="ltr">14th Conference on Sustainable Development of Energy, Water and Environment Systems (SDEWES)&nbsp;</td><td dir="ltr">1-6 Tetor 2019&nbsp;</td><td dir="ltr">Dubrovnik, Kroaci&nbsp;</td><td dir="ltr">46,177 Leke&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo3ZmNmOGRjYzUyZGQ4NzI1">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:4b75a60da852d33d" class="goog-ws-list-tableRow"><td dir="">3.&nbsp;</td><td dir="ltr">M. Vasjari, A. Shehu, S. Duka, L. Vallja, N. Broli&nbsp;</td><td dir="ltr">The status of water quality in underground water wells in Berati district&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and Environment (ICCE)&nbsp;</td><td dir="ltr">16-20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">46,810 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo0MWZhMWI3NmZjYWZmOWFj">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:6d2b2a83709d800b" class="goog-ws-list-tableRow"><td dir="">6&nbsp;</td><td dir="ltr">Aurel Nuro, Elda Marku, Bledar Murtaj&nbsp;</td><td dir="ltr">OCCURRENCE OF ORGANOCHLORINE POLLUTANTS LEVELS ON WATER SAMPLES OF DEVOLLI RIVER, ALBANIA&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and Environment (ICCE)&nbsp;</td><td dir="ltr">16-20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">53,420 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo2NjlhMmU2Y2RmNzA1Mjg3">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:1f6b2eea1bf1e3db" class="goog-ws-list-tableRow"><td dir="">7&nbsp;</td><td dir="ltr">Jonida Tahiraj, Elda Marku, Georg Raber&nbsp;</td><td dir="ltr">Heavy metal levels and pollution assessment in soils of Elbasani industrial area in Albania.&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and Environment (ICCE)&nbsp;</td><td dir="ltr">16-20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">31,618 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDozYzIyZDBhZmI1ZDgzMDA5">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:7ba8fd3c08ef782b" class="goog-ws-list-tableRow"><td dir="">9&nbsp;</td><td dir="ltr"> Morsina Çipa*, Elda Marku, Ma Teresa Garcia Còrcoles, Alberto Zafra Gómez&nbsp;</td><td dir="ltr">Contamination and profile of polycyclic aromatic hydrocarbons in soil and water samples from the district of an oil refinery in Albania&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and Environment (ICCE)&nbsp;</td><td dir="ltr">16-20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">46,810 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo2Nzg0ZGMyZTQ1YmM0ZDgz">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:d20c05af14d22ad" class="goog-ws-list-tableRow"><td dir="">10&nbsp;</td><td dir="ltr">Klodian Xhanari, Barbara Petovar, Matjaž Finšgar&nbsp;</td><td dir="ltr">Comparison of electroanalytical performances of the BiSnFE, BiFE and SnFE modified glassy carbon electrodes for the trace heavy metal analysis: A detailed EIS study&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and the Environment&nbsp;</td><td dir="ltr">16–20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">47,340 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo0YjFlZmYxZDUwMzhiMzgx">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:18c1ad03acf6f8b1" class="goog-ws-list-tableRow"><td dir="">11&nbsp;</td><td dir="ltr">Bujar Seiti, Klodian Xhanari, Nevila Bajrami&nbsp;</td><td dir="ltr">Evaluation of the inhibition effectiveness of ampiciline in the corrosion steel in acid solution&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and the Environment&nbsp;</td><td dir="ltr">16–20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">47,370 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo2NTQxNTQ5M2MxZDRmNjMy">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:54f7f6019b2ed245" class="goog-ws-list-tableRow"><td dir="">12&nbsp;</td><td dir="ltr">Alketa  Lame, Efrosini Kokalari&nbsp;</td><td dir="ltr">Protection efficiency of Eucalyptus leaf extract against acidic corrosion of Fe B500&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and the Environment&nbsp;</td><td dir="ltr">16–20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">46,810 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDoyZmZiMzFjNjBiNjExYWMy">Kliko Këtu</a>&nbsp;</td></tr><tr id="wuid:gx:57a0eec0823fd519" class="goog-ws-list-tableRow"><td dir="">13&nbsp;</td><td dir="ltr">Efrosini Kokalari, Alketa  Lame&nbsp;</td><td dir="ltr">Testing of the efficiency of Margarita Flower leaf extract, against the corrosion of Fe B500 in the H2SO4 in the presence of ions Cl-&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and the Environment&nbsp;</td><td dir="ltr">16–20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">46,810 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDoyOTNjM2NkZDE3MTMyMWJk">Kliko Këtu</a>&nbsp;</td></tr><tr id="wuid:gx:5e6d52fccb84f3e9" class="goog-ws-list-tableRow"><td dir="">5.1&nbsp;</td><td dir="ltr">Arjan Korpa, Silvana Gjyli, Fabrizio Cavani, Tommaso Tabanelli, Adelaida Andoni, Claudia Belviso&nbsp;</td><td dir="ltr">TYPE X FLY ASH ZEOLITES FOR HIGH YIELD CATALYSIS OF PHENOL ALKYLATION USING DIETHYL CARBONATE&nbsp;</td><td dir="ltr">COMET System DUB2020&nbsp;</td><td dir="ltr">1-6 Tetor 2019&nbsp;</td><td dir="ltr">Dubrovnik, Kroaci&nbsp;</td><td dir="ltr">Vlera e  finacimit pefshihet tek Publikimi Nr.5&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDoxNjZlODc4MjJiZTM5YTc0">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:7523e4bfa330c9fe" class="goog-ws-list-tableRow"><td dir="">1&nbsp;</td><td dir="ltr">Elda Marku, Aurel Nuro&nbsp;</td><td dir="ltr">Preliminary study of some&nbsp; organic pollutants in moss and pine needles in Tirana region, Albania&nbsp;</td><td dir="ltr">32nd Task Force Meeting of UNECE ICP Vegetation&nbsp;</td><td dir="ltr">18-21 Shkurt 2019&nbsp;</td><td dir="ltr">Targoviste, Rumani&nbsp;</td><td dir="ltr">83,090 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDoyNzM4Y2U2ODQwZDMwNDY4">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:52f63ac544f8e496" class="goog-ws-list-tableRow"><td dir="">6.1&nbsp;</td><td dir="ltr">Aurel Nuro, Elda Marku, Bledar Murtaj, Kujtim Dule, Elisabeta Peti, Eriola Sila&nbsp;</td><td dir="ltr">ORGANIC POLLUTANT CONCENTRATIONS IN MARINE WATER SAMPLES OF ADRIATIC SEA. CASE STUDY: HOT-SPOT OF PORTO-ROMANO, ALBANIA&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and Environment (ICCE)&nbsp;</td><td dir="ltr">16-20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">Vlera e financimit perfshihet tek financimi Nr.6&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDozMTQwMTg4YTRlNDFlOTE0">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:1b249fab969974c3" class="goog-ws-list-tableRow"><td dir="">11.1&nbsp;</td><td dir="ltr">Bujar Seiti, Klodian Xhanari, Rajna Lila, Fatos Ylli, Areta Alinj&nbsp;</td><td dir="ltr">The inhibition effect of the amygdali amare biter semen extract in the corrosion of carbon steel in 3 wt.% NaCl solution&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and the Environment&nbsp;</td><td dir="ltr">16–20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">Vlera e financimit perfsihet tek financimi Nr.11&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo2ZDU3ZDgxZDllNjg1YWNk">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:4d409b9fbbc42b97" class="goog-ws-list-tableRow"><td dir="">10.1&nbsp;</td><td dir="ltr">Klodian Xhanari, David Majer, Matjaž Finšgar&nbsp;</td><td dir="ltr">Electrochemical impedance spectroscopy studies in screen printed electrode technology for heavy metal trace analysis&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and the Environment&nbsp;</td><td dir="ltr">16–20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">Vlera e financimit perfshihet tek vlera e financimit Nr.10&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo1NTNkYjAzZWRhZTg1MGMw">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:3ef57193c0842966" class="goog-ws-list-tableRow"><td dir="">5&nbsp;</td><td dir="ltr">A.    Korpa , S. Gjyli, T. Tabanelli, F. Cavani , C. Belviso, K. Xhaxhiu, D. Siliqi, B. Dida&nbsp;</td><td dir="ltr">On the parameters affecting the zeolite type synthesis from waste fly ash&nbsp;</td><td dir="ltr">COMET System DUB2019&nbsp;</td><td dir="ltr">1-6 Tetor 2019&nbsp;</td><td dir="ltr">Dubrovnik, Kroaci&nbsp;</td><td dir="ltr">79,199 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo3YTAwMWEyODJiZjIxMDk4">Kliko Këtu</a>&nbsp;</td></tr><tr id="wuid:gx:575d917567b691ef" class="goog-ws-list-tableRow"><td dir="">8&nbsp;</td><td dir="ltr">Nevila Broli, Majlinda Vasjari&nbsp;</td><td dir="ltr">Thin gold film electrode for voltammetric determination of Chromium (VI)&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and Environment (ICCE)&nbsp;</td><td dir="ltr">16-20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">74,773 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo2NDkwZWMzZmE0MTc4OTg0">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:7dc16b1e5f44dc88" class="goog-ws-list-tableRow"><td dir="">4&nbsp;</td><td dir="ltr">ELDA MARKU, AUREL NURO&nbsp;</td><td dir="ltr">A PRELIMINARY STUDY OF PERSISTENT ORGANIC POLLUTANTS IN WATERS OF VJOSA RIVER, ALBANIA&nbsp;</td><td dir="ltr">17th International Conference on Chemistry and Environment (ICCE)&nbsp;</td><td dir="ltr">16-20 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">74,773 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo1MzRlYjU5YzMyNzI1MGRi">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:62804bd00a9fc7b1" class="goog-ws-list-tableRow"><td dir="">14&nbsp;</td><td dir="ltr">P. Lazo, F. Qarri, Sh. Allajbeu, L. Bekteshi, M. Fronasyeva, H. Harmens,, T. Stafilov&nbsp;</td><td dir="ltr">THE METAL ATMOSPHERIC DEPOSITION IN ALBANIA (2010 – 2015 MOSS SURVEY)&nbsp;</td><td dir="ltr">The 32nd Task Force Meeting&nbsp;</td><td dir="ltr">18th to 21st February 2019&nbsp;</td><td dir="ltr">Targoviste, Romania&nbsp;</td><td dir="ltr">66,578 Leke&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDoxMDgzZmI4YjY0OTgxNzQ5">Kliko ketu</a>&nbsp;</td></tr><tr id="wuid:gx:72b8c19a0a13fd71" class="goog-ws-list-tableRow"><td dir="">14.1&nbsp;</td><td dir="ltr">Pranvera Lazo, Eiliv Steinnes, Flora Qarri, Shaniko Allajbeu, Sonila Kane, Trajce Stafilov,  Marina V. Frontasyeva, Harry Harmens&nbsp;</td><td dir="ltr">Origin and spatial distribution of metals in moss samples in Albania: A hotspot of heavy metal contamination in Europe&nbsp;</td><td dir="ltr">Chemosphere&nbsp;</td><td dir="ltr">18th to 21st February 2019&nbsp;</td><td dir="ltr">Targoviste, Romania&nbsp;</td><td dir="ltr">Vlera e Finacimit perfshihet tek vlera e financimit Nr.14&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDozNGJkMDMwNTViMzhhZjk3">Kliko ketu</a>&nbsp;</td></tr><tr id="wuid:gx:580c1f688049b745" class="goog-ws-list-tableRow"><td dir="">14.2&nbsp;</td><td dir="ltr">LAZO Pranvera, Stafilov Trajce, Qarri Flora, Allajbeu Shaniko, Bekteshi Lirim, Fronasyeva Marina, Harmens Harry&nbsp;</td><td dir="ltr">Spatial and temporal trend of airborne metal deposition in Albania studied by moss biomonitoring&nbsp;</td><td dir="ltr"> Ecological Indicators&nbsp;</td><td dir="ltr">18th to 21st February 2019&nbsp;</td><td dir="ltr">Targoviste, Romania&nbsp;</td><td dir="ltr">Vlera e Finacimit perfshihet tek vlera e financimit Nr.14&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo3ZmZlMWZiOTU1MWVhMDIx">Kliko ketu</a>&nbsp;</td></tr><tr id="wuid:gx:469527c981d286c0" class="goog-ws-list-tableRow"><td dir="">17&nbsp;</td><td dir="ltr">Ermira Begu Zikri Arslan, Fengxiang Han, Eric Pierce&nbsp;</td><td dir="ltr">Mercury fractionation in contaminated soils from the Oak Ridge site, Tennessee (U.S)&nbsp;</td><td dir="ltr">International conference of Mercury as a global pollutant, 2019&nbsp;</td><td dir="ltr">8-13 Shtator 2019&nbsp;</td><td dir="ltr">Krakow, Poloni&nbsp;</td><td dir="ltr">75,387 Leke&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDoyZjg0MDY3YWFmZmRkZTM">Kliko ketu</a>&nbsp;</td></tr><tr id="wuid:gx:7af93fc4c5a98c5d" class="goog-ws-list-tableRow"><td dir="">15&nbsp;</td><td dir="ltr">Dritan Topi, Leos Uttl, Monika Tomaniova, Jana Hajslova&nbsp;</td><td dir="ltr">"INTRODUCING UNIQUE GRAPE VARIETIES FROM ALBANIA FOR RED AND WHITE WINES PRODUCTION"&nbsp;</td><td dir="ltr">9th International Symposium on RECENT ADVANCES IN FOOD ANALYSIS&nbsp;</td><td dir="ltr">5-8 Nëntor 2019&nbsp;</td><td dir="ltr">Prague&nbsp;</td><td dir="ltr">71,279 Leke&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDoyNzEyN2UwNWEwMDliNDc1">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:1d655930ce4f4635" class="goog-ws-list-tableRow"><td dir="">16&nbsp;</td><td dir="ltr">Shehu A., Vasjari M. and Vallja L.&nbsp;</td><td dir="ltr">"“Comparison of two different extraction techniques for the determination of the bioavailable fraction of heavy metals in sediments of Kune-Vaini wetland in Albania”. (Oral presentation)"&nbsp;</td><td dir="ltr">"International symposium on constructed wetlands &amp;amp; small decentralized wastewater treatment plants."&nbsp;</td><td dir="ltr">29-31 Gusht 2019&nbsp;</td><td dir="ltr">Patras, Greqi&nbsp;</td><td dir="ltr">23,659 Leke&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo1MjdjOWFmZTYyMTAwMDU4">Kliko Ketu</a>&nbsp;</td></tr></tbody>
+                                                                                            </table>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-accordion-item-tab clearfix ">
+                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon "></div>
+                                                <div class="gdlr-core-accordion-item-content-wrapper">
+                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js  gdlr-core-skin-e-background gdlr-core-skin-e-content">Departamenti i Kimisë Industriale</h4>
+                                                    <div class="gdlr-core-accordion-item-content">
+                                                        <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                            <div class="gdlr-core-text-box-item-content" style="text-transform: none ;">
+                                                                <div style="overflow-x: auto;">
+                                                                    <table style="min-width: 835px;">
+                                                                        <tbody><tr>
+                                                                            <td id="sites-canvas-wrapper">
+                                                                                <div id="sites-canvas" role="main">
+                                                                                    <div id="goog-ws-editor-toolbar-container"> </div>
+                                                                                    <div id="sites-canvas-main" class="sites-canvas-main">
+                                                                                        <div id="jot-content" class="list-page sites-clear">
+                                                                                            <table id="goog-ws-list-table" class="sites-table goog-ws-list-table">
+                                                                                                <tbody xmlns="http://www.w3.org/1999/xhtml">
+                                                                                                <tr style="font-weight: bolder">
+                                                                                                    <th style="min-width: 50px; max-width: 50px">NR.</th>
+                                                                                                    <th>Autoret e punimit</th>
+                                                                                                    <th>Titulli i punimit</th>
+                                                                                                    <th>Konferenca</th>
+                                                                                                    <th style="min-width: 100px">Data</th>
+                                                                                                    <th style="min-width: 130px">Vendi</th>
+                                                                                                    <th style="min-width: 150px">Financimi</th>
+                                                                                                    <th style="min-width: 100px">Abstrakti</th>
+                                                                                                </tr>
+                                                                                                <tr id="wuid:gx:b03a62e89edef1b" class="goog-ws-list-tableRow"><td dir="">1&nbsp;</td><td dir="ltr">Amilda Ballata; Laura Shabani&nbsp;</td><td dir="ltr">Microbiological quality monitoring of air in the processing line of the confectionery products &nbsp;</td><td dir="ltr">Nutricon 2019&nbsp;</td><td dir="ltr">12-14 Qershor 2019&nbsp;</td><td dir="ltr">Ohër, Maqedoni e Veriut&nbsp;</td><td dir="ltr">27,440 Leke&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo2YTAzNWU5NTYxNTExYTUw">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:4c3ab51783987059" class="goog-ws-list-tableRow"><td dir="">2&nbsp;</td><td dir="ltr">Hasime Manaj, Anisa Dhroso, Rozana Troja, Ilirjan Malollari&nbsp;</td><td dir="ltr">Study of rheological properties of red wines under the heating effect&nbsp;</td><td dir="ltr">NUTRICON 2019&nbsp;</td><td dir="ltr">12-14 Qershor 2019&nbsp;</td><td dir="ltr">Ohër, Maqedoni e Veriut&nbsp;</td><td dir="ltr">60733 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDoxNzllMjU4ZGQ1NGNkYTk1">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:f3d1117650b498c" class="goog-ws-list-tableRow"><td dir="">3&nbsp;</td><td dir="ltr">Anisa Dhroso, Hasime Manaj, Elena Muca, Rozana Troja, Ilirjan Malollari&nbsp;</td><td dir="ltr">Study of physico-chemical and sensory properties of red wines from black grapes (vitis vinifera l.) In different areas of Albania&nbsp;</td><td dir="ltr">NUTRICON 2019&nbsp;</td><td dir="ltr">12-14 Qershor 2019&nbsp;</td><td dir="ltr">Ohër, Maqedoni e Veriut&nbsp;</td><td dir="ltr">60,633 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo1NTk5ZDRiYmQ4M2FjZTk4">Kliko këtu</a>&nbsp;</td></tr><tr id="wuid:gx:1e1e04c2d6d27ec2" class="goog-ws-list-tableRow"><td dir="">4&nbsp;</td><td dir="ltr">Ilirjan Malollari, Hasime Manaj, Eldorida Molla&nbsp;</td><td dir="ltr">Agro-Food Waste’s Proper Engineering for Bio-energy Using Experimental and Simulation Techniques&nbsp;</td><td dir="ltr">INCREaSE 2019: "2nd International Congress on Engineering and Sustainability in the XXI Centery", Botuar si monografi tek INCREaSE 2019&nbsp;</td><td dir="ltr">9-11 Tetor 2019&nbsp;</td><td dir="ltr">Algarve-Faro, Portogali&nbsp;</td><td dir="ltr">217,114 Leke&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo2MWE4MzM4ZWU1MmVhMjYz">Kliko Ketu</a>&nbsp;</td></tr></tbody>                                                                                </table>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-accordion-item-tab clearfix ">
+                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon "></div>
+                                                <div class="gdlr-core-accordion-item-content-wrapper">
+                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js  gdlr-core-skin-e-background gdlr-core-skin-e-content">Departamenti i Matematikës</h4>
+                                                    <div class="gdlr-core-accordion-item-content">
+                                                        <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                            <div class="gdlr-core-text-box-item-content" style="text-transform: none ;">
+                                                                <div style="overflow-x: auto;">
+                                                                    <table style="min-width: 835px;">
+                                                                        <tbody><tr>
+                                                                            <td id="sites-canvas-wrapper">
+                                                                                <div id="sites-canvas" role="main">
+                                                                                    <div id="goog-ws-editor-toolbar-container"> </div>
+                                                                                    <div id="sites-canvas-main" class="sites-canvas-main">
+                                                                                        <div id="jot-content" class="list-page sites-clear">
+                                                                                            <table id="goog-ws-list-table" class="sites-table goog-ws-list-table">
+                                                                                                <tbody xmlns="http://www.w3.org/1999/xhtml">
+                                                                                                <tr style="font-weight: bolder">
+                                                                                                    <th style="min-width: 50px; max-width: 50px">NR.</th>
+                                                                                                    <th>Autoret e punimit</th>
+                                                                                                    <th>Titulli i punimit</th>
+                                                                                                    <th>Konferenca</th>
+                                                                                                    <th style="min-width: 100px">Data</th>
+                                                                                                    <th style="min-width: 130px">Vendi</th>
+                                                                                                    <th style="min-width: 150px">Financimi nga FSHN</th>
+                                                                                                    <th style="min-width: 100px">Abstrakti</th>
+                                                                                                </tr>
+                                                                                                <tr id="wuid:gx:437801ec81b3f765" class="goog-ws-list-tableRow"><td dir="">1&nbsp;</td><td dir="ltr">Besiana Cobani&nbsp;</td><td dir="ltr">Transmission eigenvalues discretness and existence&nbsp;</td><td dir="ltr">14th Serbian Mathematical Congress (SMAK 2018)&nbsp;</td><td dir="ltr">16-19 Maj 2018&nbsp;</td><td dir="ltr">Kragujevac, Serbi&nbsp;</td><td dir="ltr">155,492 Lekë&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDozOTc3YTFmZmQ3MGM4NzFm">Kliko Këtu</a>&nbsp;</td></tr></tbody></table>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="gdlr-core-accordion-item-tab clearfix ">
+                                                <div class="gdlr-core-accordion-item-icon gdlr-core-js gdlr-core-skin-icon "></div>
+                                                <div class="gdlr-core-accordion-item-content-wrapper">
+                                                    <h4 class="gdlr-core-accordion-item-title gdlr-core-js  gdlr-core-skin-e-background gdlr-core-skin-e-content">Departamenti i Matematikës së Aplikuar</h4>
+                                                    <div class="gdlr-core-accordion-item-content">
+                                                        <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
+                                                            <div class="gdlr-core-text-box-item-content" style="text-transform: none ;">
+                                                                <div style="overflow-x: auto;">
+                                                                    <table style="min-width: 835px;">
+                                                                        <tbody><tr>
+                                                                            <td id="sites-canvas-wrapper">
+                                                                                <div id="sites-canvas" role="main">
+                                                                                    <div id="goog-ws-editor-toolbar-container"> </div>
+                                                                                    <div id="sites-canvas-main" class="sites-canvas-main">
+                                                                                        <div id="jot-content" class="list-page sites-clear">
+                                                                                            <table id="goog-ws-list-table" class="sites-table goog-ws-list-table">
+                                                                                                <tbody xmlns="http://www.w3.org/1999/xhtml">
+                                                                                                <tr style="font-weight: bolder">
+                                                                                                    <th style="min-width: 50px; max-width: 50px">NR.</th>
+                                                                                                    <th>Autoret e punimit</th>
+                                                                                                    <th>Titulli i punimit</th>
+                                                                                                    <th>Konferenca</th>
+                                                                                                    <th style="min-width: 100px">Data</th>
+                                                                                                    <th style="min-width: 130px">Vendi</th>
+                                                                                                    <th style="min-width: 150px">Financimi nga FSHN</th>
+                                                                                                    <th style="min-width: 100px">Abstrakti</th>
+                                                                                                </tr>
+                                                                                                <tr id="wuid:gx:5da98b294c054c97" class="goog-ws-list-tableRow"><td dir="">1&nbsp;</td><td dir="ltr">Eralda Gjika; Lule Basha; Llukan Puka; Iris Shahini&nbsp;</td><td dir="ltr">ATMs and POS Diffusion:An Econometric Model-Albania Case Study &nbsp;</td><td dir="ltr">3rd European Conference on Design, Modeling and Optimization. ECDMO2019 . &nbsp;</td><td dir="ltr">16-18 Shkurt 2019&nbsp;</td><td dir="ltr">Amsterdam, Hollandë&nbsp;</td><td dir="ltr">220,921 Leke&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDoyN2M1YTllZTg2ODMxZmNk">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:52d2e39660a9cb50" class="goog-ws-list-tableRow"><td dir="">2&nbsp;</td><td dir="ltr">Eralda Gjika; Lule Basha; Aurora Ferrja; Arbesa Kamberi&nbsp;</td><td dir="ltr">Probabilistic Forecasting of Electricity Demand using Markov Chain and Statistical Distribution &nbsp;</td><td dir="ltr">39th International Symposium on Forecasting (ISF), 16-19 June, Thessaloniki, Greece&nbsp;</td><td dir="ltr">16-19 Qershor 2019&nbsp;</td><td dir="ltr">Selanik, Greqi&nbsp;</td><td dir="ltr">Vlera e financimit perfshihet tek Vlera e Finacimit Nr.1&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo1MDhmOWE0OTIzZjcxNjdm">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:18f107da747199f5" class="goog-ws-list-tableRow"><td dir="">3&nbsp;</td><td dir="ltr">Aurora Ferrja, Besiana Çobani, Eralda Gjika, Fatmir Hoxha "&nbsp;</td><td dir="ltr">A modified Arnoldi algorithm to compute transmission eigenvalue of an interior transmission eigenvalue problem&nbsp;</td><td dir="ltr">32nd Chemnitz FE Symposium 2019&nbsp;</td><td dir="ltr">09-11 Shtator 2019&nbsp;</td><td dir="ltr">Chemnitz, Germany&nbsp;</td><td dir="ltr">158,008 Leke&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDo1YzQ0YzNkZjQ5MDZkOTAz">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:1cf69627367194ee" class="goog-ws-list-tableRow"><td dir="">4&nbsp;</td><td dir="ltr">Aurora Ferrja, Eralda Gjika, Besiana Çobani, Arbesa Kamberi&nbsp;</td><td dir="ltr">A parallel procedure of optimization and forecasting techniques applied in energy demand&nbsp;</td><td dir="ltr">32nd Chemnitz FE Symposium 2019&nbsp;</td><td dir="ltr">09-11 Shtator 2019&nbsp;</td><td dir="ltr">Chemnitz, Germany&nbsp;</td><td dir="ltr">Vlera e Financimit perfshihet tek vlera e financimit Nr.3&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDozNWFiMGI0MjAxZTY1OTJm">Kliko Ketu</a>&nbsp;</td></tr><tr id="wuid:gx:2bd6b46dde463163" class="goog-ws-list-tableRow"><td dir="">5&nbsp;</td><td dir="ltr">Eglantina Kalluci, Xhilda Merkaj, Mentor Shevroja&nbsp;</td><td dir="ltr">Parallel Implementation of Finite Element Methods&nbsp;</td><td dir="ltr">Reliable Methods of Mathematical Modeling&nbsp;</td><td dir="ltr">9-13 Shtator 2019&nbsp;</td><td dir="ltr">TU Wien, Austria&nbsp;</td><td dir="ltr">111,705 Leke&nbsp;</td><td class="goog-ws-list-url"><a target="_new" href="https://docs.google.com/a/fshn.edu.al/viewer?a=v&amp;pid=sites&amp;srcid=ZnNobi5lZHUuYWx8ZnNobnxneDpmNzY0OTc2YjUzZWZjM2E">Kliko Ketu</a>&nbsp;</td></tr></tbody></table>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include 'includes/footer.html' %}
+        </div>
+    </div>
+    {% include 'scientific_research/includes/scientific_research_scripts.html' %}
+</body>
+</html>

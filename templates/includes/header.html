@@ -1,0 +1,130 @@
+{% load static %}
+<div class="fshn-top-bar">
+    <div class="fshn-top-bar-background"></div>
+    <div class="fshn-top-bar-container fshn-container ">
+        <div class="fshn-top-bar-container-inner clearfix">
+            <div class="fshn-top-bar-left fshn-item-pdlr"><i class="fa fa-envelope-open-o" style="font-size: 15px ;color: #96a2b8 ;margin-right: 8px ;"></i> info@fshn.edu.al <i class="fa fa-phone" style="font-size: 15px ;color: #96a2b8 ;margin-left: 18px ;margin-right: 6px ;"></i> +355 4 255 6987</div>
+            <div class="fshn-top-bar-right fshn-item-pdlr">
+                <ul id="fshn-top-bar-menu" class="sf-menu fshn-top-bar-menu fshn-top-bar-right-menu">
+                    <li class="menu-item fshn-normal-menu"><a href="{% url 'evente' %}">Evente</a></li>
+                    <li class="menu-item fshn-normal-menu"><a href="{% url 'kritere-dhe-kuota' %}">Kritere & Kuota</a></li>
+                    <li class="menu-item fshn-normal-menu"><a href="{% url 'portali' %}">Portali</a></li>
+                </ul>
+                <div class="fshn-top-bar-right-social"></div><a class="fshn-top-bar-right-button" href="{% url 'buletini-shkencor' %}" target="_blank">Buletini Shkencor</a></div>
+        </div>
+    </div>
+</div>
+<header class="fshn-header-wrap fshn-header-style-plain  fshn-style-menu-right fshn-sticky-navigation fshn-style-fixed" data-navigation-offset="75px">
+    <div class="fshn-header-background"></div>
+    <div class="fshn-header-container  fshn-container">
+        <div class="fshn-header-container-inner clearfix">
+            <div class="fshn-logo  fshn-item-pdlr">
+                <div class="fshn-logo-inner">
+                    <a class="" href="{% url 'index' %}"><img src="{% static 'images/FSHN_Logo_Blue_And_Green.svg' %}" alt="FSHN Logo" /></a>
+                </div>
+            </div>
+            <div class="fshn-navigation fshn-item-pdlr clearfix ">
+                <div class="fshn-main-menu" id="fshn-main-menu">
+                    <ul id="menu-main-navigation-1" class="sf-menu">
+                        <li class="menu-item menu-item-home fshn-normal-menu"><a href="{% url 'index' %}" class="sf-with-ul-pre">Kreu</a></li>
+                        <li class="menu-item fshn-normal-menu menu-item-has-children sf-with-ul-pre"><a href="{% url 'fakulteti' %}">Fakulteti</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item" data-size="60"><a href="{% url 'fakulteti' %}">Historiku</a> </li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'fakulteti' %}">Struktura drejtuese</a> </li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'fakulteti' %}">Struktura administrative</a> </li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'fakulteti' %}">Misioni</a> </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item  current-menu-item  menu-item-has-children fshn-normal-menu"><a href="#" class="sf-with-ul-pre">Departamentet</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item" data-size="60"><a href="{% url 'departamenti-biologjisë' %}">Departamenti i Biologjisë</a></li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'departamenti-bioteknologjisë' %}">Departamenti i Bioteknologjisë</a></li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'departamenti-fizikës' %}">Departamenti i Fizikës</a></li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'departamenti-informatikës' %}">Departamenti i Informatikës</a></li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'departamenti-kimisë' %}">Departamenti i Kimisë</a></li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'departamenti-kimisë-industriale' %}">Departamenti i Kimisë Industriale</a></li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'departamenti-matematikës' %}">Departamenti i Matematikës</a></li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'departamenti-matematikës-aplikuar' %}">Departamenti i Matematikës së Aplikuar</a></li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'qendra-kërkimore-florës-dhe-faunës' %}">Qendra Kërkimore e Florës dhe Faunës</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children fshn-mega-menu"><a href="{% url 'doktoratura' %}" class="sf-with-ul-pre">Kërkimi Shkencor</a>
+                            <div class="sf-mega sf-mega-full megaimg">
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item-has-children" data-size="15"><a class="sf-with-ul-pre">Projekte</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="{% url 'projekte' %}">NetChem</a></li>
+                                            <li class="menu-item"><a href="{% url 'projekte' %}">Dita e ADN-së</a></li>
+                                            <li class="menu-item"><a href="{% url 'projekte' %}">Young Programmers Space</a></li>
+                                            <li class="menu-item"><a href="{% url 'projekte' %}">EuroBiotech School</a></li>
+                                            <li class="menu-item"><a href="{% url 'projekte' %}">RTA-CSIT</a></li>
+                                            <li class="menu-item"><a href="{% url 'projekte' %}">Theseus</a></li>
+                                            <li class="menu-item"><a href="{% url 'projekte' %}">Molecular Biotechnology</a></li>
+                                            <li class="menu-item"><a href="{% url 'projekte' %}">Software Testing and Deployment Lab</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children" data-size="15"><a href="{% url 'doktoratura' %}" class="sf-with-ul-pre">Doktoratura</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="{% url 'doktoratura' %}">Departamenti i Biologjisë</a></li>
+                                            <li class="menu-item"><a href="{% url 'doktoratura' %}">Departamenti i Bioteknologjisë</a></li>
+                                            <li class="menu-item"><a href="{% url 'doktoratura' %}">Departamenti i Fizikës</a></li>
+                                            <li class="menu-item"><a href="{% url 'doktoratura' %}">Departamenti i Informatikës</a></li>
+                                            <li class="menu-item"><a href="{% url 'doktoratura' %}">Departamenti i Kimisë</a></li>
+                                            <li class="menu-item"><a href="{% url 'doktoratura' %}">Departamenti i Kimisë Industriale</a></li>
+                                            <li class="menu-item"><a href="{% url 'doktoratura' %}">Departamenti i Matematikës</a></li>
+                                            <li class="menu-item"><a href="{% url 'doktoratura' %}">Departamenti i Matematikës së Aplikuar</a></li>
+                                            <li class="menu-item"><a href="{% url 'doktoratura' %}">Qendra Kërkimore e Florës dhe Faunës</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children" data-size="15"><a href="{% url 'publikime-dhe-konferenca' %}" class="sf-with-ul-pre">Publikime & Konferenca</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item"><a href="{% url 'publikime-dhe-konferenca' %}">Departamenti i Biologjisë</a></li>
+                                            <li class="menu-item"><a href="{% url 'publikime-dhe-konferenca' %}">Departamenti i Bioteknologjisë</a></li>
+                                            <li class="menu-item"><a href="{% url 'publikime-dhe-konferenca' %}">Departamenti i Fizikës</a></li>
+                                            <li class="menu-item"><a href="{% url 'publikime-dhe-konferenca' %}">Departamenti i Informatikës</a></li>
+                                            <li class="menu-item"><a href="{% url 'publikime-dhe-konferenca' %}">Departamenti i Kimisë</a></li>
+                                            <li class="menu-item"><a href="{% url 'publikime-dhe-konferenca' %}">Departamenti i Kimisë Industriale</a></li>
+                                            <li class="menu-item"><a href="{% url 'publikime-dhe-konferenca' %}">Departamenti i Matematikës</a></li>
+                                            <li class="menu-item"><a href="{% url 'publikime-dhe-konferenca' %}">Departamenti i Matematikës së Aplikuar</a></li>
+                                            <li class="menu-item"><a href="{% url 'publikime-dhe-konferenca' %}">Qendra Kërkimore e Florës dhe Faunës</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item" data-size="15">
+                                        <div class="fshn-mega-menu-section-content"><span style="font-size: 14px; font-weight: 500;">Fakulteti i Shkencave të Natyrës ofron 42 programe dhe 9 departamente, 5000 studentë dhe 1500 studentë të rinj, 73 profesorë dhe një staf akademik prej 171 personash.</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item menu-item-has-children fshn-normal-menu"><a href="{% url 'njoftime' %}" class="sf-with-ul-pre">Studenti</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item" data-size="60"><a href="{% url 'njoftime' %}">Njoftime</a></li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'studenti' %}">Orari</a></li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'studenti' %}">Provime</a></li>
+                                <li class="menu-item" data-size="60"><a href="{% url 'studenti' %}">Email Studenti</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item fshn-normal-menu"><a href="{% url 'bursa' %}">Bursa</a></li>
+                        <li class="menu-item fshn-normal-menu"><a href="{% url 'baza-ligjore' %}">Baza Ligjore</a></li>
+                    </ul>
+                    <div class="fshn-navigation-slide-bar" id="fshn-navigation-slide-bar"></div>
+                </div>
+                <div class="fshn-main-menu-right-wrap clearfix ">
+                    <div class="fshn-main-menu-search" id="fshn-top-search"><i class="icon_search"></i></div>
+                    <div class="fshn-top-search-wrap">
+                        <div class="fshn-top-search-close"></div>
+                        <div class="fshn-top-search-row">
+                            <div class="fshn-top-search-cell">
+                                <form role="search" method="get" class="search-form" action="#">
+                                    <input type="text" class="search-field fshn-title-font" placeholder="Search..." value="" name="s">
+                                    <div class="fshn-top-search-submit"><i class="fa fa-search"></i></div>
+                                    <input type="submit" class="search-submit" value="Search">
+                                    <div class="fshn-top-search-close"><i class="icon_close"></i></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

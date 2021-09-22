@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fakulteti i Shkencave të Natyrës | FSHN</title>
+    {% include 'includes/stylesheets.html' %}
+    {% load static %}
+</head>
+<body class="home page-template-default page page-id-2039 gdlr-core-body woocommerce-no-js tribe-no-js fshn-body fshn-body-front fshn-full  fshn-with-sticky-navigation  fshn-blockquote-style-1 gdlr-core-link-to-lightbox">
+    {% include 'includes/mobile_header.html' %}
+    {% load static %}
+    <div class="fshn-body-outer-wrapper" style="background-image: url( {% static '/images/fshn_home_home.jpg'%})!important;">
+        <div class="fshn-body-wrapper clearfix  fshn-with-frame">
+            {% include 'includes/header.html' %}
+            <div class="fshn-page-wrapper" id="fshn-page-wrapper">
+                <div class="fshn-not-found-wrap" id="fshn-full-no-header-wrap">
+                    <div class="fshn-not-found-background"></div>
+                    <div class="fshn-not-found-container fshn-container">
+                        <div class="fshn-header-transparent-substitute"></div>
+                        <div class="fshn-not-found-content fshn-item-pdlr">
+                            <h1 class="fshn-not-found-head">404</h1>
+                            <h3 class="fshn-not-found-title fshn-content-font">FAQJA NUK ËSHTË E DISPONUESHME</h3>
+                            <div class="fshn-not-found-caption">Gabim, faqja që kërkoni nuk mund të gjendet.</div>
+                            <form role="search" method="get" class="search-form" action="index.html">
+                                <input type="text" class="search-field fshn-title-font" placeholder="Kërko..." value="" name="s">
+                                <div class="fshn-top-search-submit"><i class="fa fa-search"></i></div>
+                                <input type="submit" class="search-submit" value="Search">
+                            </form>
+                            <div class="fshn-not-found-back-to-home"><a href="{% url 'index' %}">KTHEHUNI TEK FAQJA KRYESORE</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include 'includes/footer.html' %}
+        </div>
+    </div>
+    {% include 'includes/scripts.html' %}
+</body>
+</html>

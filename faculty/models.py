@@ -1,21 +1,12 @@
 from django.db import models
-from users.models import Admin, Academic
+from core.models import StudyLevel
 
 
 # Create your models here.
-STUDY_LEVEL = (
-    ("1", "bachelor"),
-    ("2", "master"),
-    ("3", "doctorature"),
-)
-
-
 class Department(models.Model):
-    admin = models.ForeignKey(Admin, on_delete=models.CASCADE)
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
     description = models.TextField(max_length=500, blank=True)
-    department_head = models.ForeignKey(Academic, on_delete=models.CASCADE)
     link = models.CharField(max_length=1000)
     is_active = models.BooleanField(default=True)
     is_deleted = models.BooleanField(default=False)
@@ -27,6 +18,28 @@ class Department(models.Model):
     class Meta:
         verbose_name = 'Department'
         verbose_name_plural = 'Departments'
+
+    def __str__(self):
+        return self.title
+
+
+class ScientificBulletin(models.Model):
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=255, unique=True)
+    description = models.TextField(max_length=500, blank=True)
+    study_level = models.ForeignKey(StudyLevel, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='photos/scientific_bulletin')
+    link = models.CharField(max_length=1000)
+    is_active = models.BooleanField(default=True)
+    is_deleted = models.BooleanField(default=False)
+    created_date = models.DateTimeField(auto_now_add=True)
+    # created_user = models.ForeignKey()
+    updated_date = models.DateTimeField(auto_now=True)
+    # updated_user = models.ForeignKey()
+
+    class Meta:
+        verbose_name = 'ScientificBulletin'
+        verbose_name_plural = 'ScientificBulletins'
 
     def __str__(self):
         return self.title
@@ -60,6 +73,7 @@ class Doctorature(models.Model):
     slug = models.SlugField(max_length=255, unique=True)
     description = models.TextField(max_length=500, blank=True)
     link = models.CharField(max_length=1000)
+    file = models.FileField(upload_to='doctoratures/file', blank=True)
     is_active = models.BooleanField(default=True)
     is_deleted = models.BooleanField(default=False)
     created_date = models.DateTimeField(auto_now_add=True)
@@ -101,69 +115,102 @@ class PublicationConference(models.Model):
         return self.title
 
 
-class Program(models.Model):
+class LawBaseType(models.Model):
     title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=255, unique=True)
     description = models.TextField(max_length=500, blank=True)
-    link = models.CharField(max_length=1000)
-    study_level = models.CharField(max_length=100, choices=STUDY_LEVEL)
     is_active = models.BooleanField(default=True)
     is_deleted = models.BooleanField(default=False)
     created_date = models.DateTimeField(auto_now_add=True)
-    department = models.ForeignKey(Department, on_delete=models.CASCADE)
     # created_user = models.ForeignKey()
     updated_date = models.DateTimeField(auto_now=True)
     # updated_user = models.ForeignKey()
 
     class Meta:
-        verbose_name = 'Program'
-        verbose_name_plural = 'Programs'
+        verbose_name = 'LawBaseType'
+        verbose_name_plural = 'LawBaseTypes'
 
     def __str__(self):
         return self.title
 
 
-class Course(models.Model):
+class CriterAndQuote(models.Model):
     title = models.CharField(max_length=200, unique=True)
-    code = models.CharField(max_length=10, unique=True)
-    slug = models.SlugField(max_length=255, unique=True)
     description = models.TextField(max_length=500, blank=True)
     link = models.CharField(max_length=1000)
-    study_level = models.CharField(max_length=100, choices=STUDY_LEVEL)
+    study_level = models.ForeignKey(StudyLevel, on_delete=models.CASCADE)
     is_active = models.BooleanField(default=True)
     is_deleted = models.BooleanField(default=False)
     created_date = models.DateTimeField(auto_now_add=True)
-    program = models.ForeignKey(Program, on_delete=models.CASCADE)
     # created_user = models.ForeignKey()
     updated_date = models.DateTimeField(auto_now=True)
     # updated_user = models.ForeignKey()
 
     class Meta:
-        verbose_name = 'Course'
-        verbose_name_plural = 'Courses'
+        verbose_name = 'CriterAndQuote'
+        verbose_name_plural = 'CriteresAndQuotes'
 
     def __str__(self):
         return self.title
 
 
-class QuickLink(models.Model):
+class LawBase(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=255, unique=True)
     description = models.TextField(max_length=500, blank=True)
     link = models.CharField(max_length=1000)
-    study_level = models.CharField(max_length=100, choices=STUDY_LEVEL)
-    is_pinned = models.BooleanField(default=False)
+    law_base_type = models.ForeignKey(LawBaseType, on_delete=models.CASCADE)
     is_active = models.BooleanField(default=True)
     is_deleted = models.BooleanField(default=False)
     created_date = models.DateTimeField(auto_now_add=True)
-    department = models.ForeignKey(Department, on_delete=models.CASCADE)
     # created_user = models.ForeignKey()
     updated_date = models.DateTimeField(auto_now=True)
     # updated_user = models.ForeignKey()
 
     class Meta:
-        verbose_name = 'QuickLink'
-        verbose_name_plural = 'QuickLinks'
+        verbose_name = 'LawBase'
+        verbose_name_plural = 'LawBases'
+
+    def __str__(self):
+        return self.title
+
+
+class Event(models.Model):
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=255, unique=True)
+    description = models.TextField(max_length=500, blank=True)
+    image = models.ImageField(upload_to='photos/event')
+    link = models.CharField(max_length=1000)
+    location = models.CharField(max_length=255, blank=False)
+    is_active = models.BooleanField(default=True)
+    is_deleted = models.BooleanField(default=False)
+    created_date = models.DateTimeField(auto_now_add=True)
+    # created_user = models.ForeignKey()
+    updated_date = models.DateTimeField(auto_now=True)
+    # updated_user = models.ForeignKey()
+
+    class Meta:
+        verbose_name = 'Event'
+        verbose_name_plural = 'Events'
+
+    def __str__(self):
+        return self.title
+
+
+class Burse(models.Model):
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=255, unique=True)
+    description = models.TextField(max_length=500, blank=True)
+    link = models.CharField(max_length=1000)
+    is_active = models.BooleanField(default=True)
+    is_deleted = models.BooleanField(default=False)
+    created_date = models.DateTimeField(auto_now_add=True)
+    # created_user = models.ForeignKey()
+    updated_date = models.DateTimeField(auto_now=True)
+    # updated_user = models.ForeignKey()
+
+    class Meta:
+        verbose_name = 'Burse'
+        verbose_name_plural = 'Burses'
 
     def __str__(self):
         return self.title
